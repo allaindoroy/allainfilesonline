@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allain Doroy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link rel="icon" 
+     type="image/png" 
+     href="https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg">
+    <script src="main.js"></script>
+</head>
+  <body>
+ <nav class="navbar">
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Contact.html">Contact Me</a></li>
+       <!-- <li><a href="projects.html" target="_blank">projects</a></li> -->
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+ </nav> 
+
+<div class="content-wrapper" id="Contact">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <h2 class="subtitle">Contact Info</h2>
+<br>
+<br>
+<br>
+        <ul class="Info">
+          <li> 
+            <img src="images/homelogo.png" >
+            <a> Antipolo City Philippines </a>
+          </li>
+        
+           <li>
+            <img src="images/gmail_logo2.png" >
+            <a> allaindoroy@gmail.com</a>
+          </li>
+      
+          <li>
+            <img src="images/cellphonelogo2.png" >
+            <a> 09619207832</a>
+          </li>         
+        </ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="messform">
+<h3> Send me a message  </h3><br>
+<p>"Feel free to contact me for any inquiries"</p>
+</div>
+<br>
+<br>
+<br>
+
+
+    <form id="myForm" action="https://formspree.io/f/mgedbbzn" method="POST">
+     <input type="text" name="name" placeholder="Full Name" >
+     <br>
+     <br>
+     <input type="email" name="email" placeholder="Email Address" required>
+     <br>
+     <br>
+     <input type="text" name="number" placeholder="Phone no." >
+     <br>
+     <br>
+     <textarea type="text" name="message" placeholder="Type your message here... "></textarea>
+     <br>
+     <br>
+     <button type="submit">Submit</button>
+
+     
+</form>
+
+        <script>
+        function myFunction() {
+          document.getElementById("myForm").reset();
+        }
+    </script>
+      </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+<h3> Connect with me! </h3>
+<br>
+
+  <ul class="social">
+    <li>
+   
+      <a href="https://www.facebook.com/allain.borjadoroy" target="_blank">
+        <img src="images/facebook-logo.png" >
+      </a>
+    </li>
+
+
+    <li>
+      
+      <a href="https://www.instagram.com/allain.borjadoroy" target="_blank">
+        <img src="images/iglogo.png">
+      </a>
+    </li>
+
+
+    <li>
+     
+      <a href="https://twitter.com/i/flow/login" target="_blank">
+        <img src="images/twitterlogo.png" >
+      </a>
+    </li>
+
+    <li>
+     
+      <a href="https://www.linkedin.com/in/allain-doroy-922597245/" target="_blank">
+        <img src="images/linkedinlogo.png" >
+      </a>
+    </li>
+     </ul>
+
+     <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <div class="footer">
+ <p>© 2022 by Allain Doroy.</p>
+ </div>
+</body>
+</html>
