@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.logo a{
+  font-family: 'Alfa Slab One';font-size: 22px;
+  letter-spacing: 4px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://wallpapercave.com/wp/wp3077568.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: black;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: darkgreen;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: green;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.banner{
+  background: url("banner.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+  font-size: 23px;
+  font-family:  Times New Roman;
+  color: violet;
+
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 90vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
+
+div.content {
+  padding: 0 20px;
+}
+
+
+div.content-wrapper {
+  margin: auto;
+  padding-top: 50px 20px;
+  width: 1000px;
+  max-width: 100%;
+  
+
+
+}
+div.content-wrapper .subtitle{
+
+}
+
+h1{
+  text-align: center;
+  font-family: Azeret Mono;
+  color: floralwhite;
+}
+
+.top {
+  text-align: center;
+}
+
+h2 {
+  color: snow;
+  font-family: Copperplate;
+  background-color: #404040;
+  height: 32px;
+  text-align: center;
+}
+h3{
+  font-family: arial;
+  color: white;
+  text-decoration: none;
+  font-family: Copperplate;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+p {
+  
+  font-family: 'Azeret Mono', monospace;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: violet;
+}
+
+div#contactform {
+  display: block;
+}
+
+
+input, textarea, label {
+  border: 1px solid #eaeaea;
+  padding: 4px 10px;
+  border-radius: 2px;
+  line-height: 30px;
+  width: 300px;
+  font-family: arial;
+  font-size: 15px;
+  color: black;
+  background-color: lightgray;
+
+
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"], input[type="submit"] {
+  width: auto;
+}
+
+
+
+th {
+  font-family: 'Azeret Mono', monospace;
+  background-color: green;
+}
+
+td {
+  font-family: 'Azeret Mono', monospace;
+  background-color: #D3D3D3;
+}
+
+
+li {
+  list-style: square;
+  font-family: 'Azeret Mono', monospace;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.social{
+  align-items:center;
+}
+
+.social img{
+  height: 3%;
+  width: 3%;
+}
+
+.social li{
+  display: flex;
+
+}
+
+.Info{
+  align-items:center;
+}
+
+.Info img{
+  height: 3%;
+  width: 3%;
+}
+
+.Info li{
+  display: flex;
+}
+
+.Info li p{
+  font-family: Azeret Mono;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+}
+
+button {
+  border: 30px;
+  border-radius: 4px;
+}
+
+button:hover{
+  background-color: whitesmoke;
+  color: green;
+}
+
+.footer p{
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+#myForm{
+  text-align:center;
+  align-items:center;
+}
+
+
+
+
+
+
+
+
+
